@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos | Domus</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/trabajos.css" />
+    <link rel="stylesheet" href="../css/cotizacion.css">
+    <script src="../js/cost.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a54581bdfd.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="general">
+      <div class="navbar">
+        <header>
+          <a href="index.html">
+            <img src="../assets/logo.svg" alt="Logo" />
+          </a>
+        </header>
+        <nav>
+          <ul>
+            <li class="nav__links"><a href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav__links"><a href="trabajos.html">TRABAJOS</a></li>
+            <li class="nav__links"><a href="contactos.html">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <a href="form.html" class="nav__btn">REGÍSTRATE</a>
+      </div>
+      <section>
+        <div class="container">
+          <h1>ÚLTIMOS TRABAJOS</h1>
+          <div class="projects" id="projects">
+            <div class="project-content">
+              <div class="project__info">
+                <h3>Cooking App</h3>
+                <p>Aplicación diseñada y desarrollada para plataformas Android.</p>
+                <div class="content__tags">
+                  <p>UI Design</p>
+                  <p>Kotlin</p>
+                </div>
+              </div>
+              <div class="project__img">
+                <img src="../assets/app-1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project__info">
+                <h3>Codext website</h3>
+                <p>Implementación responsive para el sitio web de Codext.</p>
+                <div class="content__tags">
+                  <p>Wireframes</p>
+                  <p>Responsive Website</p>
+                  <p>Branding</p>
+                </div>
+              </div>
+              <div class="project__img">
+                <img src="../assets/website.png" alt="">
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project__img">
+                <img src="../assets/vr-page.png" alt="Page Wireframe">
+              </div>
+              <div class="project__info">
+                <h3>VRGAME Website</h3>
+                <p>Una página web moderna con animaciones.</p>
+                <div class="content__tags">
+                  <p>UI Design</p>
+                  <p>SEO</p>
+                  <p>Responsive Website</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project__info">
+                <h3>Tasks App</h3>
+                <p>Aplicación diseñada y desarrollada para plataformas Android.</p>
+                <div class="content__tags">
+                  <p>UI Design</p>
+                  <p>Swift</p>
+                </div>
+              </div>
+              <div class="project__img">
+                <img src="../assets/app2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-container" id="cotizacion">
+          <h3>COTIZA TUS PROYECTOS</h3>
+            <div class="prices">
+              <div id="tab-services">
+                <div class="selected">
+                  <h2 class="service">Página Web</h2>
+                </div>
+                <div>
+                  <h2 class="service">App Móvil</h2>
+                </div>
+              </div>
+              <div id="tab-forms">
+                <div class="form-content selected">
+                  <form>
+                    <div class="form-field">
+                      <label for="pages">Número de páginas</label>
+                      <input type="number" name="pages" id="pages" />
+                    </div>
+                    <div class="form-field">
+                      <label for="capacity">Capacidad en GB</label>
+                      <input type="number" id="capacity" />
+                    </div>
+                    <div class="form-field">
+                      <label for="forms">Número de formularios</label>
+                      <input type="number" id="forms" />
+                    </div>
+                    <div class="form-field">
+                      <label>Foro</label>
+                      <input type="radio" name="yesForo" value="yes" />
+                      <label>Sí</label>
+                      <input type="radio" name="yesForo" value="no" checked>
+                      <label>No</label>
+                    </div>
+                    <div class="form-field">
+                      <label for="user">Número de usuarios</label>
+                      <input type="number" id="user" />
+                    </div>
+                    <input type="submit" value="Cotizar" id="cotizarPW" class="form-btn" />
+                  </form>
+                </div>
+                <div class="form-content">
+                  <form>
+                    <div class="form-field">
+                      <label for="activities">Número de actividades</label>
+                      <input type="number" id="activities" />
+                    </div>
+                    <div class="form-field">
+                      <label for="form">Número de formularios</label>
+                      <input type="number" id="form" />
+                    </div>
+                    <div class="form-field">
+                      <label for="users">Número de usuarios</label>
+                      <input type="number" id="users" />
+                    </div>
+                    <div class="form-field">
+                      <label>Acceso a sensores</label>
+                      <input type="radio" name="sensor" value="yes" />
+                      <label>Sí</label>
+                      <input type="radio" name="sensor" value="no" checked/>
+                      <label>No</label>
+                    </div>
+                    <div class="form-field">
+                      <label>Uso de GPS</label>
+                      <input type="radio" name="gps" value="yes" />
+                      <label>Sí</label>
+                      <input type="radio" name="gps" value="no" checked />
+                      <label>No</label>
+                    </div>
+                    <input type="submit" value="Cotizar" id="cotizarAM"  class="form-btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer">
+          <p>© 2020 Domus Automation. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer__img">
+          <div class="footer__icon">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

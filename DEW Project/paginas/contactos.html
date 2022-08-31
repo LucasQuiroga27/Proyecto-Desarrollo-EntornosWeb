@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a54581bdfd.js" crossorigin="anonymous"></script>
+    <!-- Enlaces -->
+    <link rel="stylesheet" href="../css/contacto-estilos.css" />
+    <script src="../js/FormContacto.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <header>
+        <a href="index.html">
+            <img src="../assets/logo.svg" alt="Logo">
+        </a>
+        </header>
+        <nav>
+        <ul>
+            <li class="nav__links"><a href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav__links"><a href="trabajos.html">TRABAJOS</a></li>
+            <li class="nav__links"><a href="contactos.html">CONTACTO</a></li>
+        </ul>
+        </nav>
+        <a href="form.html" class="nav__btn">REGÍSTRATE</a>
+      </div>
+      <main>
+        <section>
+          <h1>CONTACTA A DOMUS</h1>
+          <div class="contact">
+            <div class="contact__text">
+              <p>
+                Te mostramos nuestros datos de contacto para que puedas
+                comunicarte con nosotros cuando lo desees. Nuestro equipo de atención al cliente se pondrá en contacto contigo para atenderte.
+              </p>
+              <div class="contact__data">
+                <p><b>Teléfonos:</b> (+51) 968 957 274 / (+51) 956 397 284</p>
+                <p>
+                  <b>Oficinas:</b> Jr. Pizarro 745, Trujillo, La Libertad, Perú.
+                </p>
+                <p><b>Email:</b> soporte@domaut.com / ventas@domaut.com</p>
+              </div>
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.48064012502!2d-79.02732035533411!3d-8.108772287404765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d842155c191%3A0x8f8e594edfeec82e!2sJir%C3%B3n%20Francisco%20Pizarro%20745%2C%20Trujillo%2013001!5e0!3m2!1ses-419!2spe!4v1606575672413!5m2!1ses-419!2spe"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"></iframe>
+            </div>
+            <div class="form">
+              <h2>COMUNÍCATE CON NOSOTROS</h2>
+              <p>
+                Completa los recuadros con la información necesaria para que
+                podamos contactarnos contigo.
+              </p>
+              <form id="miFormulario">
+                <input type="text" id="nombre" placeholder="Nombre" name="nombre">
+                <input type="text" id="apellidos" placeholder="Apellidos" name="apellidos" >
+                <input type="email" placeholder="Correo electrónico" name="email">
+                <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje..." id="txt"></textarea>
+                <input class="form__button" type="submit" id="enviar" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <p>© 2020 Domus Automation. Todos los derechos reservados.</p>
+          <!-- <div class="footer__links">
+            <a href="./cookies.html" class="cookies">Política de cookies.</a>
+          </div> -->
+        </div>
+        <div class="footer__img">
+          <div class="footer__icon">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    margin-top: 50px;
+}
+
+header {
+    margin-right: auto; 
+}
+
+header img{
+    margin-top: 8px;
+    max-height: 15px;
+    width: 100px;
+}
+
+.navbar{
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* background: #3d88aa; */
+    background-color:  #2d3e5f;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.nav__links {
+    display: inline-block;
+    line-height: 40px;
+    color:#fff;
+    position: relative;
+    z-index: 1;
+}
+
+.nav__links a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav__links > a {
+    margin: 0px 15px;
+}
+
+.nav__links a:hover{
+	color: #f8f41e;
+}
+
+.nav__links:hover > ul {
+    display: block;
+}
+
+.nav__btn {
+    cursor: pointer;
+    background: #f5814c;
+    border: none;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 7px 15px;
+    color: #fff;
+}
+
+.nav__btn:hover {
+    background: #db7546;
+}
+
+.banner img{ 
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    background: #222120;
+    opacity: .3;
+    width: 100%;
+    height: 300px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+}
+
+.mission, .vision {
+    margin: 20px 10px;
+    max-width: 450px;
+    padding: 10px 20px;
+    color: #2c2c2c;
+    border-left: 2px solid #f5814c;
+    animation-name: revelacion;
+    animation-timing-function: ease-in;
+    animation-duration: .7s;
+}
+
+.mission h2, .vision h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.mission__text p {
+    font-size: 1.5rem;
+}
+
+.team-container {
+    margin-top: 15px;
+    padding: 30px;
+    margin: 40px;
+}
+
+.team-container h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin: 5px auto 30px;
+}
+
+.team-container h2::after{
+    content: '';
+    display: block;
+    margin: 8px auto 10px;
+    background: #518099;
+    width: 90px;
+    height: 2px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.member {
+    max-width: 190px;
+    height: 310px;
+    margin: 10px 40px;
+}
+
+.member__info{ 
+    padding: 20px;
+}
+.member__info p{ 
+    color: #2c2c2c;
+}
+
+.member img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.contact {
+    background: #497a94;
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.contact p {
+    margin: 10px auto 30px;
+}
+
+.contact__btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #f5814c;
+    cursor: pointer;
+    text-decoration: none;
+    /* box-shadow: #A59999 8px 8px 30px; */
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #5a5a5a;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 25px 0;
+}
+
+.footer p {
+    margin: auto;
+}
+
+.footer__img{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icon i{
+    color: #5a5a5a;
+    font-size: 1.1rem;
+    margin-right: 30px;
+    cursor: pointer;
+}   
+
+.cookies::before{
+    content: '|';
+    margin-right: 15px;
+}
+
+.footer__icon .fa-facebook-f:hover{
+    color: #082dcff5;
+}
+
+.footer__icon .fa-twitter:hover{
+    color: #2c74fcf5;
+}
+
+.footer__icon .fa-instagram:hover{
+    color: #c720bff5;
+}
+
+
+/* Animacion */
+
+@keyframes revelacion {
+    from {
+        opacity: 0;
+        margin-top: 100px;
+    } 
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*responsive en proceso*/
+
+@media only screen and (max-width:710px) {
+    nav{
+        display: none;
+    }
+}
